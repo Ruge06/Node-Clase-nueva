@@ -1,0 +1,7 @@
+<p>fotos works!</p>
+<h1>Mis fotos</h1>
+<div *ngFor="let foto of misfotos" id="cuerpo">
+    <div id="tituloN">{{foto.id}}</div>
+    <img id="img" [src] = "foto.url">
+    <p id="tituloU">{{foto.title}}</p>
+</div>

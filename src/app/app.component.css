@@ -1,0 +1,19 @@
+div{
+    margin: 10px 150px 10px 150px;
+    background-color: rgb(144, 199, 73);
+    border: blueviolet;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(209, 44, 44);
+}
+
+#id{
+    font-size: 30px;
+    text-align: start;
+    padding-left: 50px;
+}
+
+#cuerpo{
+    padding: 50px;
+    text-align: justify;
+}

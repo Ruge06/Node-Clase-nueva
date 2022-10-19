@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { posts } from './posts';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'introduccion';
+  nombre = 'Gabriel';
+  articulos = posts;
 }

@@ -1,0 +1,28 @@
+#cuerpo{
+    margin: 20px;
+    height: 35%;
+    width: 30%;
+    background-color: rgb(150, 176, 221);
+    display: inline-block;
+    flex-flow: wrap;
+    justify-content: space-around;
+    border: 2px solid black;
+    position: relative;
+}
+
+#img{
+    width: 100%;
+}
+
+#tituloN{
+    right: 0%;
+    width: 80px;
+    height: 80px;
+    text-align:center;
+    font-size: 50px;
+    background-color: rgb(184, 243, 187);
+    border-radius: 50%;
+    position: absolute;
+    line-height: 150%;
+    top: 0;
+}

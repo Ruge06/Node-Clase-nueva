@@ -3,14 +3,19 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { FotosComponent } from './Componentes/fotos/fotos.component';
+import { PokemonlistComponent } from './Componentes/pokemonlist/pokemonlist.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FotosComponent
+    FotosComponent,
+    PokemonlistComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

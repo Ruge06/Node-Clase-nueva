@@ -1,0 +1,42 @@
+#cuerpo{
+    margin: 20px;
+    height: auto;
+    width: 600px;
+    background-color: rgb(150, 176, 221);
+    flex:0 1 24%;
+    justify-content:center;
+    border: 2px solid black;
+    position:relative;
+    align-items: center;
+    border-radius: 5px;
+}
+
+#pokeFoto{
+    width: 250px;
+    height: 250px;
+    margin: 5px;
+}
+
+#Titulo{
+    margin: 20px;
+    text-align: center;
+    text-transform:uppercase;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#characters{
+    margin: 5px;
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+
+#t1{
+    margin: 20px;
+}

@@ -1,1 +1,19 @@
 <p>pokemonlist works!</p>
+<div class="cards">
+    <div id="cuerpo" *ngFor="let pokemon of pokemonsData">
+        <h2 id="Titulo">{{pokemon.name}}</h2>
+        <img id="pokeFoto" [src]="pokemon.sprites.other.dream_world.front_default">
+        <div id="characters">
+            <h2 id="t1">Pokemon Numero: {{pokemon.id}}</h2>
+            <h2 id="t1">Experiencia: {{pokemon.base_experience}}</h2>
+            <h2 id="t1">Altura: {{pokemon.weight}}</h2>
+            <div *ngFor="let abilities of pokemon.abilities">
+                <h2 id="t1">Habilidad: {{abilities.ability.name}}</h2>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+</div>
+

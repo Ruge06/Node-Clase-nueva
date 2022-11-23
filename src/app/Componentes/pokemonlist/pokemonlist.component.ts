@@ -9,23 +9,32 @@ import { PokemonService } from 'src/app/servicios/pokemon.service';
 export class PokemonlistComponent implements OnInit {
   pokemon = {};
   pokemonsData:any[]=[];
+  busqueda: string="";
   constructor(private pokemonService: PokemonService) { }
 
-  ngOnInit(): void {this.pokemonService.getPokemon().subscribe(respuesta => {
-    // this.pokemon=respuesta.results;
-    // console.log(this.pokemon);
+  ngOnInit(): void {
     this.getpokemonsdata();
-  })
+    
   }
 
   getpokemonsdata(){
-    for (let i=1;i <=150; i++){
-      this.pokemonService.getpokemon(i).subscribe(respuesta => {
-        this.pokemonsData.push(respuesta);
-      });
-    }
-
+    this.pokemonsData = [];
+    this.pokemonService.getPokemon().subscribe(respuesta => {
+      for (let i=1;i <=150; i++){
+        this.pokemonService.getpokemon(i).subscribe((respuesta:any) => {
+          if(this.busqueda ===""|| respuesta.name.includes(this.busqueda)){
+            this.pokemonsData.push(respuesta);
+          }
+        });
+      }
+  
+      
+    })
     console.log(this.pokemonsData);
+  }
+
+  buscarPokemons(){
+    this.getpokemonsdata();
   }
 
 }

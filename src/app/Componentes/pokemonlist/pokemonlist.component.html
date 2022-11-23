@@ -1,4 +1,7 @@
-<p>pokemonlist works!</p>
+<div>
+    <input type="text" [(ngModel)]="busqueda">
+    <button (click)="buscarPokemons()">Buscar</button>
+</div>
 <div class="cards">
     <div id="cuerpo" *ngFor="let pokemon of pokemonsData">
         <h2 id="Titulo">{{pokemon.name}}</h2>
